@@ -1,0 +1,36 @@
+<!--Barre de navigation-->
+<div class="container-fluid">
+    <div class="block">
+        <figure class="image">
+            <img class ="is-rounded" src="./images/dsc9113-16-9.1280x240.jpg" id="imgBarre" alt="">
+            <hr>
+        </figure>
+        <nav class="navbar has-background-dark">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="ControleAuthentification?accueilClient=true">
+                    <h1 class="title is-4 has-text-light" ><fmt:message key="HeadTitle"></fmt:message></h1>
+                </a>
+            </div>
+            <div class="navbar-menu is-active has-background-dark">
+                <div class="navbar-start">
+                    <a class="navbar-item has-text-light" href="ControleAuthentification?accueilClient=true"><fmt:message key="HeaderHomePage"></fmt:message></a>
+                    <a class="navbar-item has-text-light" href="ControleListeProduits?action=getListeProduits"><fmt:message key="HeaderMovies"></fmt:message></a>
+                    <a class="navbar-item has-text-light" href="ControleListeProduits?action=rechercheFilm"><fmt:message key="HeaderSearch"></fmt:message></a>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item has-text-light" href="ControleCompte?action=affichageCompte"><fmt:message key="CsAccountHeader"></fmt:message></a>
+                <a class="navbar-item has-text-light" href="ControleAffichageCommandes"><fmt:message key="HeaderOrders"></fmt:message></a>
+                <a class="navbar-item has-text-light" href="ControlePanier?action=panier">
+                    <img src="./images/shoppingCart.png" alt='<fmt:message key="HeaderCartAlt"></fmt:message>'>
+                    ${sessionScope.qtePanier}
+                </a>
+                <a class="navbar-item has-text-light"  href="ControleDeconnexion">
+                    <img src="./images/Disconnect.png" alt='<fmt:message key="HeaderDisconnect"></fmt:message>'>
+                </a>
+            </div>
+        </nav>
+        <hr>
+    </div>
+</div>
+<!--Fin bloc navbar-->

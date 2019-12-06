@@ -1,0 +1,43 @@
+<!--Barre de navigation-->
+<div class="container-fluid">
+    <div class="block">
+        <figure class="image">
+            <img class ="is-rounded" src="./images/dsc9113-16-9.1280x240.jpg" id="imgBarre" alt="" />
+            <hr>
+        </figure>
+        <nav class="navbar has-background-dark">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="ControleAuthentification?accueilEmp=true">
+                    <h1 class="title is-4 has-text-light"><fmt:message key="HeadTitle"></fmt:message></h1>
+                </a>
+            </div>
+            <div class="navbar-menu is-active has-background-dark">
+                <div class="navbar-start">
+                    <a class="navbar-item has-text-light" href="ControleAuthentification?accueilEmp=true"><fmt:message key="HeaderHomePage"></fmt:message></a>
+                    <a class="navbar-item has-text-light" href="ControleEmpProduit?action=formProduit"><fmt:message key="HeaderEmpAdd"></fmt:message></a>
+                    <a class="navbar-item has-text-light" href="ControleEmpListeProduits?action=getListeProduits"><fmt:message key="HeaderEmpList"></fmt:message></a>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <a class="navbar-item has-text-light" href="ControleEmpListeCartes">
+                    <fmt:message key="HeaderEmpCartes"></fmt:message>
+                </a>
+                <a class="navbar-item has-text-light" href="ControleEmpListeCommandes">
+                    <fmt:message key="HeaderEmpCommandes"></fmt:message>
+                </a>
+                <a class="navbar-item has-text-light" href="ControleEmpListeClients">
+                    <fmt:message key="HeaderEmpClient"></fmt:message>
+                </a>
+                <a class="navbar-item has-text-light" href="ControleEmpEmploye?action=afficher">
+                    <fmt:message key="HeaderEmpAdmin"></fmt:message>
+                </a>
+                <a class="navbar-item has-text-light"  href="ControleDeconnexion">
+                    <img src="./images/Disconnect.png" alt="<fmt:message key="HeaderDisconnect"></fmt:message>">
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>
+<hr>
+<!--Fin bloc navbar-->

@@ -1,0 +1,24 @@
+<div class="container-fluid has-background-black">
+    <hr>
+    <div class="block">
+        <div class="columns">
+            <div class="column is-12">
+
+                <form name="formLang" method="post" action="ControleLangue">
+                    <span class="select is-link">
+                        <select class="is-hovered" name="langue">
+                            <option value="fr_CA"><fmt:message key="OptionTagFr"></fmt:message></option>
+                            <option value="en_CA"><fmt:message key="OptionTagEn"></fmt:message></option>
+                        </select>
+                    </span>
+                    <input class="button is-dark" type="submit" value="<fmt:message key="ButtonLanguage"></fmt:message>"
+                    <br>
+                    <p class="has-text-right has-text-light"><fmt:message key="TotalUsers"></fmt:message> ${totalusers}</p>
+                <p class="has-text-right has-text-light"><fmt:message key="ActiveUsers"></fmt:message> ${currentusers}</p>
+                    <p class="has-text-right has-text-light"><fmt:message key="MadeByFooter"></fmt:message></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
